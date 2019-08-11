@@ -316,7 +316,69 @@ html {
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: #000; }
+  color: #52606D;
+  background: #171F3F;
+  margin: 0 auto; }
+
+.contact {
+  background-color: #171F3F; }
+  .contact__mail {
+    color: #0593FB; }
+
+.main {
+  background: white;
+  margin: 10px auto;
+  margin-top: -10px;
+  max-width: calc(100% - 20px);
+  width: 100%; }
+
+.intro {
+  margin-left: 128px; }
+
+.intro__content {
+  color: #52606D;
+  font-size: 20px; }
+
+.intro__img {
+  width: 100px;
+  max-width: 100%;
+  border-radius: 50% 50% 50% 0;
+  border: 2px solid white;
+  -webkit-box-shadow: 0 0 4px #52606D;
+          box-shadow: 0 0 4px #52606D; }
+
+.intro__link {
+  color: #0593FB; }
+
+.intro__mail {
+  color: #0593FB;
+  font-size: 20px; }
+
+.listed-skills__list-element {
+  list-style: none; }
+
+.listed-skills__list-element:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f058  "; }
+
+.listed-skills__list-element--green:before {
+  color: #125c12; }
+
+.listed-skills__list-element--navy:before {
+  color: #171F3F; }
+
+.listed-skills__list-element--blue:before {
+  color: #3737ce; }
+
+.project__link {
+  color: #0593FB; }
+
+.intro__title {
+  color: #171F3F;
+  font-size: 40px; }
+
+.social__link {
+  color: #0593FB; }
 
 /*# sourceMappingURL=main.css.map */
