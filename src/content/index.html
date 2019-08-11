@@ -1,40 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Portfolio początkującego frontendowca</title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="portfolio początkującego frontendowca - Rafał Piekarski" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description"
+    content="Portfolio początkującego frontendowca. Tworzę proste, ale ładne, statyczne strony internetowe dla niewielkich przedsięwzięć." />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="https://rafalpiekarski.github.io/" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>MY GITHUBPAGES PAGE</h1>
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
 
-    <script src="js/main.js"></script>
-  </body>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <main>
+    <section class="intro">
+      <h1 class="intro__title">Welcome! I build and design websites. Feel free to look at my project and to know me better!</h1>
+      <img class="intro__img" src="" alt="photo of author from profile, in suit, in dark background.">
+      <p class="intro__content">In my free time I design and build simple, but nice websites for me and also for my friends. I treat this as one of my hobby and I like this activity very much. Please, feel free to look at <a class="intro__link" href="projects">my projects</a> and <a class="intro__link" href="contact">contact with me</a>, if you would like to have your own website!</p>
+      <p class="intro__content"><a class="intro__mail" href="mailto:r.piekarski@wp.eu">r.piekarski@wp.eu</a></p>
+    </section>
+    <section class="skills">
+      <h2 class="skills__title">My skills</h2>
+        <article class="listed-skills">
+          <h3 class="listed-skills__title">Working knowledge</h3>
+          <ul class="listed-skills__list">
+            <li class="listed-skills__list-element">HTML5 - semantic HTML</li>
+            <li class="listed-skills__list-element">CSS - Grid, Flexbox, animations, </li>
+            <li class="listed-skills__list-element">SASS</li>
+            <li class="listed-skills__list-element">Markdown</li>
+            <li class="listed-skills__list-element">BEM</li>
+          </ul>
+        </article>
+        <article class="listed-skills">
+          <h3 class="listed-skills__title">Know something about</h3>
+          <ul class="listed-skills__list">
+            <li class="listed-skills__list-element">JS - DOM manipulations</li>
+            <li class="listed-skills__list-element">JS - Local storage</li>
+            <li class="listed-skills__list-element">NPM Scripts</li>
+            <li class="listed-skills__list-element">PWA</li>
+          </ul>
+        </article>
+        <article class="listed-skills">
+          <h3 class="listed-skills__title">Want to learn</h3>
+          <ul class="listed-skills__list">
+            <li class="listed-skills__list-element">Gatsby</li>
+            <li class="listed-skills__list-element">React.JS</li>
+            <li class="listed-skills__list-element">Node.JS</li>
+            <li class="listed-skills__list-element">Server side rendering</li>
+            <li class="listed-skills__list-element">JS</li>
+            <li class="listed-skills__list-element">Typescript</li>
+          </ul>
+        </article>
+    </section>
+    <section class="projects" id="projects">
+      <h2 class="projects__title">My projects</h2>
+      <p class="projects__description">I started my fronted some time ago, as adult person. Since this time i've got some projects, that I would like to show you.</p>
+      <ul class="projects__list">
+        <li class="project">
+          <img class="project__img" src="" alt="">
+          <h3 class="project__title">Simple Editor</h3>
+          <p class="project__content">Niewielki edytor umożliwiający zapisanie pojedynczej, istotnej informacji.</p>
+          <div class="project__footer">
+            <a class="project__link" href="#" title="Simple Editor Demo">Demo</a>
+            <a class="project__link" href="#" title="Simple Editor Source code">GitHub</a>
+          </div>
+        </li>
+        <li class="project">
+            <img class="project__img" src="" alt="">
+            <h3 class="project__title">Simple Editor</h3>
+            <p class="project__content">Niewielki edytor umożliwiający zapisanie pojedynczej, istotnej informacji.</p>
+            <div class="project__footer">
+              <a class="project__link" href="#" title="Simple Editor Demo">Demo</a>
+              <a class="project__link" href="#" title="Simple Editor Source code">GitHub</a>
+            </div>
+          </li>
+          <li class="project">
+              <img class="project__img" src="" alt="">
+              <h3 class="project__title">Simple Editor</h3>
+              <p class="project__content">Niewielki edytor umożliwiający zapisanie pojedynczej, istotnej informacji.</p>
+              <div class="project__footer">
+                <a class="project__link" href="#" title="Simple Editor Demo">Demo</a>
+                <a class="project__link" href="#" title="Simple Editor Source code">GitHub</a>
+              </div>
+            </li>
+            <li class="project">
+                <img class="project__img" src="" alt="">
+                <h3 class="project__title">Simple Editor</h3>
+                <p class="project__content">Niewielki edytor umożliwiający zapisanie pojedynczej, istotnej informacji.</p>
+                <div class="project__footer">
+                  <a class="project__link" href="#" title="Simple Editor Demo">Demo</a>
+                  <a class="project__link" href="#" title="Simple Editor Source code">GitHub</a>
+                </div>
+              </li>
+                      <li class="project">
+          <img class="project__img" src="" alt="">
+          <h3 class="project__title">Simple Editor</h3>
+          <p class="project__content">Niewielki edytor umożliwiający zapisanie pojedynczej, istotnej informacji.</p>
+          <div class="project__footer">
+            <a class="project__link" href="#" title="Simple Editor Demo">Demo</a>
+            <a class="project__link" href="#" title="Simple Editor Source code">GitHub</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <footer class="contact" id="contact">
+      <h2 class="contact__title">Contact</h2>
+      <p class="contact__content">I'm open for new knowledge and opportunities. Please do not hesitate to contact with me!</p>
+      <ul class="social">
+        <li class="social__list-element">
+          <a class="social__link" href="#">
+            <img class="social__icon" src="#" alt="facebook icon">
+          </a>
+        </li>
+        <li class="social__list-element">
+            <a class="social__link" href="#">
+              <img class="social__icon" src="#" alt="GitHub icon">
+            </a>
+          </li>
+          <li class="social__list-element">
+              <a class="social__link" href="#">
+                <img class="social__icon" src="#" alt="LinkedIn icon">
+              </a>
+            </li>
+      </ul>
+      <a class="contact__mail" href="mailto:r.piekarski@wp.eu">r.piekarski@wp.eu</a>
+    </footer>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
