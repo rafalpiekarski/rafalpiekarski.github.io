@@ -11,6 +11,83 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  color: $gray;
+  background: $navy;
+  margin: 0 auto;
+}
+
+.contact {
+  background-color: $navy;
+  &__mail {
+    color: $link;
+  }
+}
+
+.main {
+  background: white;
+  margin: 10px auto;
+  margin-top: -10px;
+  max-width: calc(100% - 20px);
+  width: 100%;
+}
+
+.intro {
+  margin-left: 128px;
+}
+
+.intro__content {
+  color: $gray;
+  font-size: 20px;
+}
+
+.intro__img {
+  width: 100px;
+  max-width: 100%;
+  border-radius: 50% 50% 50% 0;
+  border: 2px solid white;
+  box-shadow: 0 0 4px $gray;
+}
+
+.intro__link {
+  color: $link;
+}
+
+.intro__mail {
+  color: $link;
+  font-size: 20px;
+}
+
+.listed-skills__list-element {
+  list-style: none;
+}
+
+.listed-skills__list-element:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f058  ";
+}
+
+.listed-skills__list-element--green:before {
+  color: $green;
+}
+
+.listed-skills__list-element--navy:before {
+  color: $navy;
+}
+
+.listed-skills__list-element--blue:before {
+  color: $blue;
+}
+
+.project__link {
+  color: $link;
+}
+
+.intro__title {
+  color: $navy;
+  font-size: 40px;
+}
+
+.social__link {
+  color: $link;
 }
