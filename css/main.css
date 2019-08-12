@@ -321,64 +321,112 @@ body {
   margin: 0 auto; }
 
 .contact {
-  background-color: #171F3F; }
+  background-color: #171F3F;
+  padding-left: 128px; }
+  .contact__content {
+    color: #fff; }
   .contact__mail {
     color: #0593FB; }
+  .contact__title {
+    color: #fff; }
 
 .main {
   background: white;
   margin: 10px auto;
-  margin-top: -10px;
   max-width: calc(100% - 20px);
   width: 100%; }
 
 .intro {
-  margin-left: 128px; }
+  margin-left: 128px;
+  margin-top: 10px;
+  padding-top: 128px;
+  max-width: 780px; }
+  .intro__content {
+    color: #52606D;
+    font-size: 20px; }
+  .intro__img {
+    border: 2px solid white;
+    border-radius: 50% 50% 50% 0;
+    -webkit-box-shadow: 0 0 4px #52606D;
+            box-shadow: 0 0 4px #52606D;
+    max-width: 100%;
+    width: 100px; }
+  .intro__link {
+    color: #0593FB; }
+  .intro__mail {
+    color: #0593FB;
+    font-size: 20px; }
+  .intro__title {
+    color: #171F3F;
+    font-size: 40px; }
 
-.intro__content {
-  color: #52606D;
-  font-size: 20px; }
+.listed-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .listed-skills__title {
+    color: #171F3F; }
+  .listed-skills__list-element {
+    list-style: none; }
+    .listed-skills__list-element:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 600;
+      content: "\f058  "; }
+    .listed-skills__list-element--blue:before {
+      color: #3737ce; }
+    .listed-skills__list-element--green:before {
+      color: #125c12; }
+    .listed-skills__list-element--navy:before {
+      color: #171F3F; }
 
-.intro__img {
-  width: 100px;
-  max-width: 100%;
-  border-radius: 50% 50% 50% 0;
-  border: 2px solid white;
-  -webkit-box-shadow: 0 0 4px #52606D;
-          box-shadow: 0 0 4px #52606D; }
+.project {
+  width: 580px;
+  height: 300px;
+  background-color: #fff;
+  margin: 24px; }
+  .project__link {
+    color: #0593FB; }
+  .project__title {
+    color: #171F3F; }
 
-.intro__link {
-  color: #0593FB; }
+.projects {
+  background-color: #F5F7FA; }
+  .projects_link {
+    color: #0593FB; }
+  .projects__title {
+    color: #171F3F;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px; }
 
-.intro__mail {
-  color: #0593FB;
-  font-size: 20px; }
-
-.listed-skills__list-element {
-  list-style: none; }
-
-.listed-skills__list-element:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 600;
-  content: "\f058  "; }
-
-.listed-skills__list-element--green:before {
-  color: #125c12; }
-
-.listed-skills__list-element--navy:before {
-  color: #171F3F; }
-
-.listed-skills__list-element--blue:before {
-  color: #3737ce; }
-
-.project__link {
-  color: #0593FB; }
-
-.intro__title {
-  color: #171F3F;
-  font-size: 40px; }
+.social__icon {
+  color: #fff; }
 
 .social__link {
   color: #0593FB; }
+
+.skills {
+  margin-left: 128px;
+  margin-right: 128px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .skills__title {
+    color: #171F3F;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px; }
 
 /*# sourceMappingURL=main.css.map */
