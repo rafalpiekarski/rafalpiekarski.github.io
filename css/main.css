@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -307,126 +308,126 @@ template {
 [hidden] {
   display: none; }
 
+.intro {
+  margin: 0 auto;
+  max-width: 1184px;
+  padding: 112px 0 184px; }
+  .intro__content {
+    font-size: 1.25rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.25rem;
+    margin-bottom: 3.75rem;
+    max-width: 780px; }
+  .intro__img {
+    border-radius: 50% 50% 50% 0;
+    height: 120px;
+    width: 120px; }
+  .intro__link {
+    color: #0593FB;
+    font-weight: 500; }
+  .intro__mail {
+    border-bottom: 1px solid #0593FB;
+    color: #0593FB;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding-bottom: 8px; }
+  .intro__title {
+    font-family: Poppins;
+    line-height: 3.5rem;
+    margin: 2rem 0 1rem;
+    max-width: 780px;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600; }
+
+.skills {
+  max-width: 1184px;
+  margin: 0 auto; }
+  .skills__title {
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3rem;
+    padding: 1rem 0;
+    border-bottom: 2px solid #52606D; }
+
+.listed-skills {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 8rem 0 8rem; }
+  .listed-skills__list {
+    -webkit-column-gap: 1.5rem;
+       -moz-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+    margin-top: calc(1.5rem + 2px);
+    padding: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none; }
+    .listed-skills__list-element {
+      min-height: 40px;
+      padding: 11px 0 11px 30px;
+      position: relative; }
+      .listed-skills__list-element::before {
+        color: #1f831f;
+        content: '\f058';
+        font-family: "Font Awesome 5 free";
+        position: absolute;
+        top: 10px;
+        left: 0; }
+        .listed-skills--violet .listed-skills__list-element::before {
+          color: #653CAD; }
+        .listed-skills--blue .listed-skills__list-element::before {
+          color: #3737ce; }
+  .listed-skills__title {
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.75rem;
+    margin: 0; }
+    .listed-skills__title::before {
+      content: '';
+      background: #1f831f;
+      border-radius: 1px;
+      display: block;
+      height: 2px;
+      margin-bottom: 1.5rem;
+      width: 80px; }
+      .listed-skills--violet .listed-skills__title::before {
+        background-color: #653CAD; }
+      .listed-skills--blue .listed-skills__title::before {
+        background-color: #3737ce; }
+
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
 body {
-  color: #52606D;
   background: #171F3F;
-  margin: 0 auto; }
-
-.contact {
-  background-color: #171F3F;
-  padding-left: 128px; }
-  .contact__content {
-    color: #fff; }
-  .contact__mail {
-    color: #0593FB; }
-  .contact__title {
-    color: #fff; }
+  border: 16px solid #171F3F;
+  color: #52606D;
+  font-family: "Poppins", sans-serif; }
 
 .main {
-  background: white;
-  margin: 10px auto;
-  max-width: calc(100% - 20px);
-  width: 100%; }
+  background-color: #fff; }
 
-.intro {
-  margin-left: 128px;
-  margin-top: 10px;
-  padding-top: 128px;
-  max-width: 780px; }
-  .intro__content {
-    color: #52606D;
-    font-size: 20px; }
-  .intro__img {
-    border: 2px solid white;
-    border-radius: 50% 50% 50% 0;
-    -webkit-box-shadow: 0 0 4px #52606D;
-            box-shadow: 0 0 4px #52606D;
-    max-width: 100%;
-    width: 100px; }
-  .intro__link {
-    color: #0593FB; }
-  .intro__mail {
-    color: #0593FB;
-    font-size: 20px; }
-  .intro__title {
-    color: #171F3F;
-    font-size: 40px; }
-
-.listed-skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-  .listed-skills__title {
-    color: #171F3F; }
-  .listed-skills__list-element {
-    list-style: none; }
-    .listed-skills__list-element:before {
-      font-family: "Font Awesome 5 Free";
-      font-weight: 600;
-      content: "\f058  "; }
-    .listed-skills__list-element--blue:before {
-      color: #3737ce; }
-    .listed-skills__list-element--green:before {
-      color: #125c12; }
-    .listed-skills__list-element--navy:before {
-      color: #171F3F; }
-
-.project {
-  width: 580px;
-  height: 300px;
-  background-color: #fff;
-  margin: 24px; }
-  .project__link {
-    color: #0593FB; }
-  .project__title {
-    color: #171F3F; }
-
-.projects {
-  background-color: #F5F7FA; }
-  .projects_link {
-    color: #0593FB; }
-  .projects__title {
-    color: #171F3F;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 48px; }
-
-.social__icon {
-  color: #fff; }
-
-.social__link {
-  color: #0593FB; }
-
-.skills {
-  margin-left: 128px;
-  margin-right: 128px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  .skills__title {
-    color: #171F3F;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 48px; }
+.project__img {
+  max-width: 48px; }
 
 /*# sourceMappingURL=main.css.map */
