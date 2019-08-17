@@ -1,0 +1,60 @@
+.contact {
+    background: $navy;
+    color: $white;
+    padding-bottom: 112px;
+    &__content {
+        font-family: Poppins;
+        font-style: normal;
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.25rem;
+        margin: 0 0 1.5rem;
+        max-width: 580px;
+    }
+    &__mail {
+        color: $link;
+        font-family: Poppins;
+        font-style: normal;
+        display: inline-block;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin: 3rem 0 0 0;
+    }
+    &__title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        margin: 0 auto 1rem;
+        max-width: 1184px;
+        padding: 8rem 0 0;
+        &::before {
+            content: '';
+            background: $link;
+            border-radius: 1px;
+            display: block;
+            height: 2px;
+            margin-bottom: 1.5rem;
+            width: 80px;
+        }
+    }
+}
+
+.social {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    &__link {
+        color: $white;
+        text-decoration: none;
+    }
+    &__list-element {
+        list-style-type: none;
+        flex-basis: 50px;
+        & + & {
+            margin-left: 1.5rem;
+        }
+    }
+}
