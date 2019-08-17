@@ -406,6 +406,84 @@ template {
       .listed-skills--blue .listed-skills__title::before {
         background-color: #3737ce; }
 
+.projects {
+  background-color: #F5F7FA;
+  padding: 8rem 0; }
+  .projects__description {
+    color: #52606D;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    max-width: 580px; }
+  .projects__title {
+    font-size: 2.25rem;
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    padding: 1rem 0;
+    max-width: 580px; }
+
+.projects__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.project {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+          box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+  border-radius: 8px;
+  overflow: hidden; }
+  .project__container {
+    padding: 3rem; }
+  .project__content {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 2rem; }
+  .project__footer {
+    text-align: right;
+    padding: 1rem 3rem;
+    background-color: #F5F7FA; }
+  .project__img {
+    width: 32px; }
+  .project__link {
+    color: #0593FB;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    text-decoration: none; }
+    .project__link--demo::after {
+      content: "";
+      background-color: #52606D;
+      width: 2px;
+      height: 1rem;
+      display: inline-block; }
+    .project__link--demo::before {
+      content: "\f058";
+      font-family: "Font Awesome 5 free"; }
+    .project__link--github::before {
+      content: "\f058";
+      font-family: "Font Awesome 5 free"; }
+  .project__title {
+    color: #171F3F;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    margin: 0; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -424,10 +502,11 @@ body {
   color: #52606D;
   font-family: "Poppins", sans-serif; }
 
+.container {
+  margin: 0 auto;
+  max-width: 1184px; }
+
 .main {
   background-color: #fff; }
-
-.project__img {
-  max-width: 48px; }
 
 /*# sourceMappingURL=main.css.map */
