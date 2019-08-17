@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext");
 @import "modules/intro.scss";
 @import "modules/skills.scss";
+@import "modules/projects.scss";
 
 html {
   box-sizing: border-box;
@@ -23,11 +24,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.main {
-  background-color: $white;
+.container {
+  margin: 0 auto;
+  max-width: 1184px;
 }
 
-
-.project__img {
-  max-width: 48px;
+.main {
+  background-color: $white;
 }
