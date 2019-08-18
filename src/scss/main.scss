@@ -10,6 +10,9 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   scroll-behavior: smooth;
+  @media (max-width: $mobile) {
+    font-size:12px;
+  }
 }
 
 *,
@@ -23,11 +26,15 @@ body {
   border: 16px solid $navy;
   color: $gray;
   font-family: "Poppins", sans-serif;
+  @media (max-width: $mobile) {
+    border: none;
+  }
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1184px;
+  max-width: 1200px;
+  padding: 0 8px 0;
 }
 
 .main {
